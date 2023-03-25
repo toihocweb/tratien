@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Trả tiền cho tui... | Please</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        to top,
+        lightgrey 0%,
+        lightgrey 1%,
+        #e0e0e0 26%,
+        #efefef 48%,
+        #d9d9d9 75%,
+        #bcbcbc 100%
+      );
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .vcb {
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+      .vcb {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    marquee {
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+  </style>
+  <body>
+      <main>
+        <marquee>Tiền của bạn là của bạn, tiền bạn mượn tui là của tui 😃</marquee>
+      <div class="card vcb">
+        <img src="vcb.JPG" alt="" />
+      </div>
+      <div class="card momo">
+        <img src="momo.JPG" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
