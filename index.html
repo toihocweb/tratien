@@ -1,101 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Trả tiền cho tui... | Please</title>
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    html, body {
-        font-family: 'Open Sans', sans-serif;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="cache-control" content="private">
+  <meta http-equiv="Content-Language" content="vi">
+  <meta name="google" content="notranslate">
+  <meta name="language" content="vi">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Nhat Bui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Web đòi nợ">
+  <meta name="keywords" content="đòi nợ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="WEB ĐÒI NỢ">
+  <meta property="og:title" content="WEB ĐÒI NỢ">
+  <meta property="og:description" content="WEB ĐÒI NỢ">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WEB ĐÒI NỢ">
+  <meta property="og:image" content="https://toihocweb.github.io/tratien/vcb.JPG">
+  <meta property="og:locale" content="vi">
+  <meta name="googlebot" content="noodp">
+  <meta property="og:url" content="https://toihocweb.github.io/tratien/">
+  <meta property="og:image:alt" content="VUI LÒNG TRẢ TIỀN">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="261">
+  <link rel="alternate" href="https://toihocweb.github.io/tratien/" hreflang="vi-vn">
+  <link href="https://toihocweb.github.io/tratien/" rel="canonical">
+  <link rel="icon" href="images/favicon.ico">
+  <title>Trả tiền cho tui... | Please</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    img {
-      width: 100%;
-    }
+  html,
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
 
-    a {
-      background-color: #ff5f5f;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      margin-top: 20px;
-      cursor: pointer;
-      text-decoration: none;
-    }
+  img {
+    width: 100%;
+  }
 
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: linear-gradient(
-        to top,
+  a {
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top,
         lightgrey 0%,
         lightgrey 1%,
         #e0e0e0 26%,
         #efefef 48%,
         #d9d9d9 75%,
-        #bcbcbc 100%
-      );
+        #bcbcbc 100%);
+  }
+
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .vcb {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      height: auto;
+      padding: 50px;
     }
 
-    .card {
-      width: 300px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      display: flex;
-      align-items: center;
+    main {
       flex-direction: column;
     }
-    main {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
+
     .vcb {
-      margin-right: 20px;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
-    @media screen and (max-width: 768px) {
-        body {
-            height: auto;
-            padding: 50px;
-        }
-      main {
-        flex-direction: column;
-      }
-      .vcb {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-    marquee {
-        position: absolute;
-        top: -30px;
-        left: 0;
-    }
-  </style>
-  <body>
-      <main>
-        <marquee>Tiền của bạn là của bạn, tiền bạn mượn tui là của tui 😃</marquee>
-      <div class="card vcb">
-        <img src="vcb.JPG" alt="" />
-      </div>
-      <div class="card momo">
-        <img src="momo.JPG" alt="" />
-        <a href="https://me.momo.vn/4GIGTasRCJsKseFviwCvTE">Open App</a>
-      </div>
-    </main>
-  </body>
+  }
+
+  marquee {
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+</style>
+
+<body>
+  <main>
+    <marquee>Tiền của bạn là của bạn, tiền bạn mượn tui là của tui 😃</marquee>
+    <div class="card vcb">
+      <img src="vcb.JPG" alt="" />
+    </div>
+    <div class="card momo">
+      <img src="momo.JPG" alt="" />
+      <a href="https://me.momo.vn/4GIGTasRCJsKseFviwCvTE">Open App</a>
+    </div>
+  </main>
+</body>
+<script>
+console.log('%c' + `  
+████████╗██████╗  █████╗     ███╗   ██╗ ██████╗   
+╚══██╔══╝██╔══██╗██╔══██╗    ████╗  ██║██╔═══██╗  
+   ██║   ██████╔╝███████║    ██╔██╗ ██║██║   ██║  
+   ██║   ██╔══██╗██╔══██║    ██║╚██╗██║██║   ██║  
+   ██║   ██║  ██║██║  ██║    ██║ ╚████║╚██████╔╝  
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═══╝ ╚═════╝   
+`, 'color: red; font-weight: bold');
+</script>
+
 </html>
